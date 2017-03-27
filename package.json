@@ -1,0 +1,44 @@
+{
+  "name": "studionock",
+  "version": "0.0.0",
+  "description": "Source code for studionock.com",
+  "main": "index.js",
+  "scripts": {
+    "hugo": "gulp hugo",
+    "webpack": "gulp webpack",
+    "build": "NODE_ENV=production gulp build",
+    "build:preview": "gulp build-preview",
+    "start": "gulp server",
+    "lint": "eslint src",
+    "flow": "flow"
+  },
+  "author": "Adam Bergman <adam@fransvilhelm.com>",
+  "repository": "git@github.com:studionock/studionock.com.git",
+  "homepage": "https://studionock.com",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.24.0",
+    "babel-eslint": "^7.2.1",
+    "babel-loader": "^6.4.1",
+    "babel-preset-env": "^1.2.2",
+    "babel-preset-flow": "^6.23.0",
+    "browser-sync": "^2.18.8",
+    "eslint": "^3.18.0",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-plugin-flowtype": "^2.30.4",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-react": "^6.10.3",
+    "file-loader": "^0.10.1",
+    "flow-bin": "^0.42.0",
+    "gulp": "^3.9.1",
+    "gulp-postcss": "^6.4.0",
+    "gulp-util": "^3.0.8",
+    "postcss-cssnext": "^2.10.0",
+    "postcss-import": "^9.1.0",
+    "webpack": "^2.3.2"
+  },
+  "dependencies": {
+    "webpack-merge": "^4.1.0"
+  }
+}
