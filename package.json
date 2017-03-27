@@ -1,7 +1,7 @@
 {
   "name": "studionock",
   "version": "0.0.0",
-  "description": "Sourcecode for studionock.com",
+  "description": "Source code for studionock.com",
   "main": "index.js",
   "scripts": {
     "hugo": "gulp hugo",
