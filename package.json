@@ -23,6 +23,7 @@
     "babel-preset-env": "^1.2.2",
     "babel-preset-flow": "^6.23.0",
     "browser-sync": "^2.18.8",
+    "del": "^2.2.2",
     "eslint": "^3.18.0",
     "eslint-config-airbnb": "^14.1.0",
     "eslint-plugin-flowtype": "^2.30.4",
@@ -31,14 +32,17 @@
     "eslint-plugin-react": "^6.10.3",
     "file-loader": "^0.10.1",
     "flow-bin": "^0.42.0",
-    "gulp": "^3.9.1",
+    "gulp": "gulpjs/gulp.git#4.0",
+    "gulp-clean-css": "^3.0.4",
     "gulp-postcss": "^6.4.0",
+    "gulp-sourcemaps": "^2.5.0",
     "gulp-util": "^3.0.8",
     "postcss-cssnext": "^2.10.0",
     "postcss-import": "^9.1.0",
-    "webpack": "^2.3.2"
-  },
-  "dependencies": {
+    "stylelint": "^7.9.0",
+    "stylelint-config-standard": "^16.0.0",
+    "webpack": "^2.3.2",
     "webpack-merge": "^4.1.0"
-  }
+  },
+  "dependencies": {}
 }
