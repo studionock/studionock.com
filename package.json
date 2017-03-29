@@ -4,12 +4,10 @@
   "description": "Source code for studionock.com",
   "main": "index.js",
   "scripts": {
-    "hugo": "gulp hugo",
-    "webpack": "gulp webpack",
-    "build": "NODE_ENV=production gulp build",
-    "build:preview": "gulp build-preview",
-    "start": "gulp server",
-    "lint": "eslint src",
+    "start": "gulp start",
+    "build": "gulp build",
+    "lint:js": "eslint src",
+    "lint:css": "stylelint 'src/css/**/*.css'",
     "flow": "flow"
   },
   "author": "Adam Bergman <adam@fransvilhelm.com>",
