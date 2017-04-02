@@ -6,6 +6,7 @@
   "scripts": {
     "start": "gulp start",
     "build": "gulp build",
+    "test": "gulp test",
     "lint:js": "eslint src",
     "lint:css": "stylelint 'src/css/**/*.css'",
     "flow": "flow"
@@ -34,11 +35,14 @@
     "gulp-clean-css": "^3.0.4",
     "gulp-postcss": "^6.4.0",
     "gulp-sourcemaps": "^2.5.0",
+    "gulp-tape": "^0.0.9",
     "gulp-util": "^3.0.8",
     "postcss-cssnext": "^2.10.0",
     "postcss-import": "^9.1.0",
     "stylelint": "^7.9.0",
     "stylelint-config-standard": "^16.0.0",
+    "tap-spec": "^4.1.1",
+    "tape": "^4.6.3",
     "webpack": "^2.3.2",
     "webpack-merge": "^4.1.0"
   },
