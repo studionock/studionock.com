@@ -1,1 +1,3 @@
-// JS Goes here - ES6 supported
+export default function app(who = 'world') {
+  return `Hello ${who}!`;
+}
