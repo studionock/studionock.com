@@ -5,6 +5,8 @@ import cssImport from 'postcss-import';
 import cssnext from 'postcss-cssnext';
 import cleanCss from 'gulp-clean-css';
 import sourcemaps from 'gulp-sourcemaps';
+import tape from 'gulp-tape';
+import tap from 'tap-spec';
 import del from 'del';
 import BrowserSync from 'browser-sync';
 import webpack from 'webpack';
@@ -69,6 +71,11 @@ function server() {
   gulp.watch(PATHS.js.src, js());
   gulp.watch(PATHS.css.src, css);
   gulp.watch(PATHS.hugo.src, hugoTask);
+}
+
+export function test() {
+  return gulp.src('./src/js/**/*.spec.js')
+    .pipe(tape({ reporter: tap() }));
 }
 
 export const build = gulp.series(
