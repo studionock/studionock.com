@@ -29,8 +29,9 @@ class Stream extends Writable {
           .join(' ');
 
         let newHead = gutil.colors.grey(`${head}`);
-        if (head === 'INFO') newHead = gutil.colors.yellow(`${head}`);
-        if (head === 'WARN') newHead = gutil.colors.red(`${head}`);
+        if (head === 'INFO') newHead = gutil.colors.blue(`${head}`);
+        if (head === 'WARN') newHead = gutil.colors.yellow(`${head}`);
+        if (head === 'ERROR') newHead = gutil.colors.red(`${head}`);
         if (head === 'Started' || head === 'Built') newHead = gutil.colors.white(`${head}`);
 
         let newTail = gutil.colors.grey(tail);
