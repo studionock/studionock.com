@@ -1,0 +1,11 @@
+baseurl: "https://studionock.com/"
+languageCode: "en-US"
+title: "Studio NOCK"
+defaultContentLanguage: "en"
+defaultContentLanguageInSubdir: false
+enableRobotsTXT: true
+enableEmoji: true
+MetaDataFormat: "yaml"
+
+params:
+  description: "Studio NOCK is an independent platform dedicated to architecture"
