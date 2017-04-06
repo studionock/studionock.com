@@ -1,3 +1,10 @@
-baseurl = "/"
-languageCode = "en-us"
-title = "My New Hugo Site"
+baseurl = "https://studionock.com/"
+languageCode = "en-US"
+title = "Studio Nock"
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = false
+enableRobotsTXT = true
+enableEmoji = true
+
+[params]
+  description = "Studio NOCK is an independent platform dedicated to architecture"
