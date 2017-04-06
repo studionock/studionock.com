@@ -9,3 +9,10 @@ MetaDataFormat: "yaml"
 
 params:
   description: "Studio NOCK is an independent platform dedicated to architecture"
+
+menu:
+  main:
+    - Name: "NOCK"
+      Weight: -10
+      Identifier: "home"
+      URL: "/"
