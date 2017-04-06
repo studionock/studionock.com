@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="{{ .Lang }}">
+  <head>
+    <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
+    {{ partial "head" . }}
+  </head>
+  <body>
+    <div class="container">
+      <div class="container__header">
+        {{ partial "header" . }}
+      </div>
+
+      <div class="container__navMain">
+        {{ partial "nav-main" . }}
+      </div>
+
+      <main class="container__main">
+        {{ block "main" . }}
+        {{ end }}
+      </main>
+    </div>
+
+    {{ template "_internal/google_analytics_async.html" . }}
+    <script src="/app.js" async></script>
+  </body>
+</html>

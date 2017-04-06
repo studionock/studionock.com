@@ -1,5 +1,15 @@
-{{ partial "header" . }}
-
-<h1>Hugo with Gulp, PostCSS and Webpack</h1>
-
-{{ partial "footer" . }}
+{{ define "main" }}
+  {{ range where .Data.Pages "Section" "news" }}
+    <article>
+      <h2>
+        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      </h2>
+      {{ if .Truncated }}
+        {{ .Summary }}
+        <a href="{{ .RelPermalink }}">Read more ></a>
+      {{ else }}
+        {{ .Content }}
+      {{ end }}
+    </article>
+  {{ end }}
+{{ end }}
