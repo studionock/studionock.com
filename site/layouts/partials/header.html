@@ -1,3 +1,13 @@
-<header class="header">
-  <h1 class="header__title">{{ .Site.Title }}</h1>
-</header>
+{{ if eq .Type "exhibition" }}
+  <header class="header header--exhibition">
+    <h1 class="header__title">
+      Studio <span class="header__logotype">NOCK</span> presents
+    </h1>
+  </header>
+{{ else }}
+  <header class="header">
+    <h1 class="header__title">
+      <span class="header__logotype">NOCK</span>
+    </h1>
+  </header>
+{{ end }}

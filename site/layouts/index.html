@@ -1,15 +1,19 @@
 {{ define "main" }}
+  <h2>News</h2>
   {{ range where .Data.Pages "Section" "news" }}
-    <article>
-      <h2>
-        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+    <article class="article">
+      <h2 class="article__title">
+        <a class="article__link" href="{{ .RelPermalink }}">{{ .Title }}</a>
       </h2>
-      {{ if .Truncated }}
-        {{ .Summary }}
-        <a href="{{ .RelPermalink }}">Read more ></a>
-      {{ else }}
-        {{ .Content }}
-      {{ end }}
+
+      <div class="article__content">
+        {{ if .Truncated }}
+          {{ .Summary }}
+          <a class="article__readMoreLink" href="{{ .RelPermalink }}">(Read more)</a>
+        {{ else }}
+          {{ .Content }}
+        {{ end }}
+      </div>
     </article>
   {{ end }}
 {{ end }}

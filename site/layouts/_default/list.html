@@ -1,8 +1,18 @@
 {{ define "main" }}
-  {{ range .Data.Pages }}
-    <article>
-      <h2>{{ .Title }}</h2>
-      {{ .Summary }}
-    </article>
-  {{ end }}
+    {{ range .Data.Pages }}
+      <article class="article">
+        <h2 class="article__title">
+          <a class="article__link" href="{{ .RelPermalink }}">{{ .Title }}</a>
+        </h2>
+
+        <div class="article__content">
+          {{ if .Truncated }}
+            {{ .Summary }}
+            <a class="article__readMoreLink" href="{{ .RelPermalink }}">(Read more)</a>
+          {{ else }}
+            {{ .Content }}
+          {{ end }}
+        </div>
+      </article>
+    {{ end }}
 {{ end }}
