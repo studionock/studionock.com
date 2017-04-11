@@ -1,1 +1,7 @@
-@import "imports/reset.css";
+/* UTILS */
+@import "imports/_utils.css";
+@import "imports/_reset.css";
+
+/* PAGE */
+@import "imports/_layout.css";
+@import "imports/_main-navigation.css";

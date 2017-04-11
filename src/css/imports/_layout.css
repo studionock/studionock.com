@@ -1,0 +1,12 @@
+@import "../variables/_font-family.css";
+@import "../variables/_scale.css";
+
+.container {
+  padding: var(--ms0);
+  font-family: var(--fontAvenir);
+}
+
+.container__navMain,
+.container__main {
+  width: 100%;
+}
