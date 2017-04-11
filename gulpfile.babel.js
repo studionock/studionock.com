@@ -20,7 +20,7 @@ const PATHS = {
     dest: './dist',
   },
   css: {
-    src: './src/css/*.css',
+    src: './src/css/**/*.css',
     dest: './dist/css',
     main: './src/css/main.css',
   },
@@ -52,9 +52,14 @@ function js(env = 'development') {
 }
 
 function css() {
+  const postcssPlugins = [
+    cssImport(),
+    cssnext(),
+  ];
+
   return gulp.src(PATHS.css.src)
     .pipe(sourcemaps.init())
-    .pipe(postcss([cssnext(), cssImport({ from: PATHS.css.main })]))
+    .pipe(postcss(postcssPlugins))
     .pipe(cleanCss({ compatability: 'ie8' }))
     .pipe(sourcemaps.write())
     .pipe(gulp.dest(PATHS.css.dest))
