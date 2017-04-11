@@ -7,7 +7,7 @@
     {{ $currentPage := . }}
     {{ range .Site.Menus.main }}
       <li class="navigation__item {{ if $currentPage.IsMenuCurrent "main" . }}navigation__item--active{{ end }}">
-        <a href="{{ .URL }}">{{ .Name }}</a>
+        <a href="{{ .URL }}" class="navigation__link">{{ .Name }}</a>
       </li>
     {{ end }}
   </ul>
