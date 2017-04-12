@@ -1,6 +1,4 @@
-@import "variables/_scale.css";
-@import "variables/_color.css";
-@import "variables/_z-index.css";
+@import "_variables.css";
 
 .showNavigation__checkbox { display: none; }
 

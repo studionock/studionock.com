@@ -1,0 +1,5 @@
+@import "_color.css";
+
+:root {
+  --border1: 1px solid var(--colorBlack);
+}

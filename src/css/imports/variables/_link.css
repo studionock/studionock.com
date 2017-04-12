@@ -1,0 +1,21 @@
+:root {
+  --standardLink: {
+    position: relative;
+    text-decoration: none;
+    color: var(--colorBlack);
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 90%;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background-color: currentColor;
+      transition: top 0.3s ease-in-out;
+      will-change: top;
+    }
+
+    &:hover::after { top: 100%; }
+  }
+}

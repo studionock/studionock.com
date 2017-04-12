@@ -1,0 +1,53 @@
+@import "_variables.css";
+
+.summary {
+  width: 100%;
+  margin-bottom: var(--ms3);
+
+  &:last-of-type { margin-bottom: 0; }
+}
+
+.summary__header { margin-bottom: var(--ms0); }
+
+.summary__header__title {
+  text-transform: uppercase;
+  line-height: var(--lh1);
+}
+
+.summary__header__meta { font-size: var(--ms-1); }
+
+.summary__header__title__link {
+  position: relative;
+  text-decoration: none;
+  color: var(--colorBlack);
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 120%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: currentColor;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    will-change: top, opacity;
+  }
+
+  &:hover::after {
+    top: 100%;
+    opacity: 1;
+  }
+}
+
+.summary__content {
+  margin-bottom: var(--ms-1);
+
+  & p { margin-bottom: var(--ms0); }
+
+  & a { @apply --standardLink; }
+
+  & *:last-child { margin-bottom: 0; }
+}
+
+.summary__readMore__link { @apply --standardLink; }

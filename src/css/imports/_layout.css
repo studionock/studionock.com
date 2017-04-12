@@ -1,5 +1,4 @@
-@import "variables/_font-family.css";
-@import "variables/_scale.css";
+@import "_variables.css";
 
 .container {
   padding: var(--ms0);
