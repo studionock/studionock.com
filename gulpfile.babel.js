@@ -53,7 +53,7 @@ function js(env = 'development') {
 
 function css() {
   const postcssPlugins = [
-    cssImport({ root: './src/css', path: ['imports/', 'variables/'] }),
+    cssImport({ root: './src/css' }),
     cssnext(),
   ];
 
