@@ -1,13 +1,16 @@
-<div class="showNavigation">
-  <button class="showNavigation__button">Show navigation</button>
-</div>
+<input type="checkbox" id="showNavigation__checkbox" class="showNavigation__checkbox" />
+<label class="showNavigation__label" for="showNavigation__checkbox">
+  <span class="showNavigation__background"></span>
+  <span class="showNavigation__icon"></span>
+  <span class="sr-only">Show navigation</span>
+</label>
 
-<nav id="navigation" class="navigation navigation--hidden">
+<nav id="navigation" class="navigation">
   <ul class="navigation__list">
     {{ $currentPage := . }}
     {{ range .Site.Menus.main }}
-      <li class="navigation__item {{ if $currentPage.IsMenuCurrent "main" . }}navigation__item--active{{ end }}">
-        <a href="{{ .URL }}" class="navigation__link">{{ .Name }}</a>
+      <li class="navigation__item">
+        <a href="{{ .URL }}" class="navigation__link {{ if $currentPage.IsMenuCurrent "main" . }}navigation__link--active{{ end }}">{{ .Name }}</a>
       </li>
     {{ end }}
   </ul>
