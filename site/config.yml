@@ -9,6 +9,12 @@ MetaDataFormat: "yaml"
 
 params:
   description: "Studio NOCK is an independent platform dedicated to architecture"
+  contact:
+    email: "info@studionock.com"
+  adress:
+    street: "Södra Larmgatan 7"
+    city: "Gothenburg"
+    country: "Sweden"
 
 menu:
   main:

@@ -2,6 +2,8 @@
 date: "2017-04-12T16:26:49+02:00"
 draft: true
 title: "We are open"
+
+img: "/images/dummy.png"
 ---
 
 We are finally open!
