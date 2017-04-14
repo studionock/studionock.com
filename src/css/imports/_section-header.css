@@ -1,0 +1,19 @@
+@import "_variables.css";
+
+.header {
+  z-index: var(--z1);
+  width: 100%;
+  border: var(--border1);
+  border-top: none;
+  border-bottom: none;
+  padding: var(--ms0) var(--ms0);
+  background-color: var(--colorWhite);
+}
+
+/* .header__title {} */
+
+.header__title__logotype {
+  display: block;
+  width: 60%;
+  margin: 0 auto;
+}

@@ -6,6 +6,8 @@
 }
 
 .container__navMain,
-.container__main {
+.container__header,
+.container__main,
+.container__footer {
   width: 100%;
 }

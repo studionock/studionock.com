@@ -4,6 +4,9 @@
 
 /* PAGE */
 @import "imports/_layout.css";
+@import "imports/_section-article.css";
+@import "imports/_section-footer.css";
+@import "imports/_section-header.css";
 @import "imports/_section-main.css";
 @import "imports/_section-nav-main.css";
 @import "imports/_section-summary.css";

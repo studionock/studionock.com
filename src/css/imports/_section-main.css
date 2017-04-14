@@ -2,6 +2,7 @@
 
 .main {
   display: block;
+  z-index: var(--z0);
   height: auto;
   min-height: 100vh;
   border: var(--border1);
