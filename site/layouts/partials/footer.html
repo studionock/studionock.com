@@ -1,0 +1,18 @@
+<footer class="footer">
+  <div class="vcard footer__vcard">
+    <div class="org vcard__org">
+      <a class="url vcard__url vcard__link link" href="{{ .Site.BaseURL }}">
+        {{ .Site.Title }}
+      </a>
+      &mdash;
+      <a class="email vcard__email vcard__link link" href="mailto:{{ .Site.Params.contact.email }}">
+        {{ .Site.Params.contact.email }}
+      </a>
+    </div>
+
+    <div class="adr vcard__adress">
+      <span class="street-address">{{ .Site.Params.adress.street }}</span>,
+      <span class="locality">{{ .Site.Params.adress.city }}</span>,
+      <span class="country-name">{{ .Site.Params.adress.country }}</span>
+    </div>
+</footer>

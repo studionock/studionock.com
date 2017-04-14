@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="{{ .Lang }}">
   <head>
-    <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
+    <title>{{ block "title" . }}{{ .Site.Title }} &mdash; {{ .Site.Params.description }}{{ end }}</title>
     {{ partial "head" . }}
   </head>
   <body>
@@ -10,13 +10,19 @@
         {{ partial "nav-main" . }}
       </div>
 
-      <div class="container__main">
+      <div class="container__header">
         {{ partial "header" . }}
+      </div>
 
+      <div class="container__main">
         <main class="main">
           {{ block "main" . }}
           {{ end }}
         </main>
+      </div>
+
+      <div class="container__footer">
+        {{ partial "footer" . }}
       </div>
     </div>
 
