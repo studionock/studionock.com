@@ -1,13 +1,15 @@
 ---
 date: "2017-04-07T00:17:14+02:00"
 draft: true
-title: "Support/Collaboration"
+title: "Support/collaboration"
 menu:
   main:
     weight: 4
 
 ---
 
-## Support and Collaboration
+# Support and collaboration
 
-Et laut volupiduntia que volupta tiore, optas dolore num facia vendamenit omnis es ulpa dignit, sin nus volupti istiae core cus et verferum es et, simaiorrorum et laboribusape volo do- lore iduciundi dipsunt aut quaspit que de reped ullores do- lore omnitis dus quo magnimus perum fugiandit exerum quis quias et quatqui ad.
+As a Studio NOCK collaborator you take part in the creation of a new forum with the purpose to promote the architectural field and discuss it in a new context. As a sponsor of Studio NOCK you contribute to advancing the swedish architecture discourse.
+
+Do you have an idea or a suggestion? Write to [info@studionock.com](mailto:info@studionock.com)

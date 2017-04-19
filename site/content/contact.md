@@ -6,7 +6,8 @@ menu:
   main:
     weight: 5
 ---
+# Contact
 
-## Contact
-
-Et laut volupiduntia que volupta tiore, optas dolore num facia vendamenit omnis es ulpa dignit, sin nus volupti istiae core cus et verferum es et, simaiorrorum et laboribusape volo do- lore iduciundi dipsunt aut quaspit que de reped ullores do- lore omnitis dus quo magnimus perum fugiandit exerum quis quias et quatqui ad.
+Mail: [info@studionock.com](mailto:info@studionock.com)   
+Instagram: [studionock](https://www.instagram.com/studionock/)  
+Facebook: [@studionock](https://www.facebook.com/studionock/)  
