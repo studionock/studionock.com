@@ -1,6 +1,7 @@
 @import "_variables.css";
 
 .summary__title {
+  font-size: var(--ms1);
   text-transform: uppercase;
   line-height: var(--lh1);
 }

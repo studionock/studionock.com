@@ -19,3 +19,7 @@
 .link {
   @apply --standardLink;
 }
+
+.balance-text {
+  text-wrap: balanced;
+}
