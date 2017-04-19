@@ -1,16 +1,16 @@
-<article class="summary">
-  <header class="summary__header">
-    <h3 class="summary__header__title">
-      <a class="summary__header__title__link" href="{{ .RelPermalink }}">{{ .Title }}</a>
+<article class="article">
+  <header class="article__header">
+    <h3 class="summary__title">
+      <a class="summary__title__link" href="{{ .RelPermalink }}">{{ .Title }}</a>
     </h3>
-    <p class="summary__header__meta">
+    <p class="article__header__meta">
       <time pubdate="pubdate" datetime="{{ .Date | dateFormat "2006-01-02T15:04:05Z07:00" }}">
         Published on {{ .Date | dateFormat "January 2, 2006" }}
       </time>
     </p>
   </header>
 
-  <div class="summary__content">
+  <div class="article__content">
     {{ if .Truncated }}
       {{ .Summary }}
     {{ else }}
