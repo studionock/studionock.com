@@ -20,7 +20,7 @@ Heading:
 
 ## h2
 
-## h3
+### h3
 
 And so on, up to
 
