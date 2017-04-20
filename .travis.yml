@@ -8,7 +8,7 @@ branches:
     - develop
     - /^v.*$/
 before_install:
-  - sudo apt install hugo
+  - go get -v github.com/spf13/hugo
 before_script:
   - npm install -g now
 script: yarn test && yarn run build
