@@ -8,8 +8,7 @@ branches:
     - develop
     - /^v.*$/
 before_install:
-  - sudo apt-get -qq update
-  - sudo apt-get install -y hugo
+  - sudo apt install hugo
 before_script:
   - npm install -g now
 script: yarn test && yarn run build
