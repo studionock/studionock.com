@@ -1,6 +1,6 @@
 ---
 date: "2017-04-06T23:31:52+02:00"
-draft: true
+draft: false
 title: "New exhibition!"
 ---
 

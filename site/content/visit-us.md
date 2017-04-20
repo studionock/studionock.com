@@ -1,6 +1,6 @@
 ---
 date: "2017-04-06T23:47:08+02:00"
-draft: true
+draft: false
 title: "Visit us"
 menu:
   main:
