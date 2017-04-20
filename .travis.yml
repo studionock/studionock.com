@@ -1,0 +1,31 @@
+language: node_js
+node_js:
+  - '7'
+cache: yarn
+branches:
+  only:
+    - master
+    - develop
+    - /^v.*$/
+before_install:
+  - brew update
+  - brew install hugo
+before_script:
+  - npm install -g now
+script: yarn test && yarn run build
+deploy:
+  - provider: script
+    script: scripts/deploy.sh production
+    skip_cleanup: true
+    on:
+      tags: true
+      branch: master
+  - provider: script
+    script: scripts/deploy.sh staging
+    skip_cleanup: true
+    on:
+      branch: develop
+notifications:
+  email: false
+  slack:
+    secure: aHGBoVeJfAJQSQYk1hO2hvjCy08cYnkoRJaopux56C5tIndjDc7jukGNNzgTPZESsBFyyWR0AiuMsHppGscZcH8jutI9Z3ddtZ3GYqNFTNoIyu+R0AaLcFImRrZCG9fg4n5kefE+ggXiPN2DUngaaJWBRjPM1LUabpNteUVsoQr9rJvbHyZMvfTzNTxFqfjomVW9LBm6vhMwmqzeZvKHVGrD0Z5nFdBAFNDuUYVviJTE5dM87lNWhsVp7l5afdxrBG+rSnHpQI3uZj8QBRUtUemfVCDuIghUZnt2So7iDxbGc+jz3CKLKnF23tz6uGRwnc7E1kQilgdqbaGtKvP2kJPEgsuBogfLbQOTAeBzGKrs9v3OoNSZ1IMvrwhJJ0hh8+u72IBr7uOGslTs+RxRTIyUjtWC7/GJF2Xlh1Ki80W5aDCp2asDyAiFR2z6zfp4PzTIoHlVX+XV7keU6lQlynftLyCwDI0OINSfZOtrMsxKI+vyb3+bPfxghqksQYiroL0hP1lqpsyBCEp/WjfGcs9B4av+ByxMsWnG5hn6OG0RyHKUhwvoNVWZYb0M/Ox/+7mmRkl2POci2L3Kq2ksDunoau6JAltOEwWQ8dcQchH0OqSELoeah32bjvzQGScDCozMAmoH7LuNz+eSrx16yjL70v0qXFj+JHj+U+I0LJ4=
