@@ -1,8 +1,11 @@
 @import "_variables.css";
 
+body {
+  font-family: var(--fontAvenir);
+}
+
 .container {
   padding: var(--ms0);
-  font-family: var(--fontAvenir);
 }
 
 .container__navMain,
@@ -10,4 +13,9 @@
 .container__main,
 .container__footer {
   width: 100%;
+  margin: 0 auto;
+
+  @media (--breakpoint-not-small) {
+    width: 80%;
+  }
 }

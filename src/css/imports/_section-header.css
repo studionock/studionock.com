@@ -6,8 +6,7 @@
   border: var(--border1);
   border-top: none;
   border-bottom: none;
-  padding: var(--ms0) var(--ms0);
-  background-color: var(--colorWhite);
+  padding: var(--ms0);
 }
 
 .header__title__logotype {
