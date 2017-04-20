@@ -6,6 +6,7 @@ defaultContentLanguageInSubdir: false
 enableRobotsTXT: true
 enableEmoji: true
 MetaDataFormat: "yaml"
+googleAnalytics: "UA-93481692-1"
 
 params:
   description: "Studio NOCK is an independent platform dedicated to architecture"
