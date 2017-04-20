@@ -4,11 +4,16 @@
   display: block;
   z-index: var(--z0);
   height: auto;
-  min-height: 100vh;
-  border: var(--border1);
-  border-top: none;
-  border-bottom: none;
   padding: var(--ms2) var(--ms0);
+
+  @media (--breakpoint-not-small) {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    height: auto;
+    min-height: 85vh;
+    margin-bottom: 10rem;
+  }
 }
 
 .main__title {

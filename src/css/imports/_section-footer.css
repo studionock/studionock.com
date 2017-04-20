@@ -2,9 +2,6 @@
 
 .footer {
   width: 100%;
-  border: var(--border1);
-  border-top: none;
-  border-bottom: none;
   padding: var(--ms2) var(--ms0);
   font-size: var(--ms-1);
   line-height: var(--lh3);

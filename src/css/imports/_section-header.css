@@ -3,10 +3,14 @@
 .header {
   z-index: var(--z1);
   width: 100%;
-  border: var(--border1);
-  border-top: none;
-  border-bottom: none;
   padding: var(--ms0);
+
+  @media (--breakpoint-not-small) {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+  }
 }
 
 .header__title__logotype {
@@ -15,4 +19,8 @@
   margin: 0 auto;
 
   & path { fill: var(--colorBlack); }
+
+  @media (--breakpoint-not-small) {
+    width: calc(var(--ms4) * 2);
+  }
 }
