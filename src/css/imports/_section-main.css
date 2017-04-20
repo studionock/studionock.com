@@ -14,6 +14,7 @@
 .main__title {
   margin-bottom: var(--ms3);
   font-size: var(--ms1);
+  font-weight: var(--bold);
   text-transform: uppercase;
   line-height: var(--lh1);
 }

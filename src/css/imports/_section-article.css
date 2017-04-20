@@ -11,6 +11,7 @@
 
 .article__header__title {
   font-size: var(--ms1);
+  font-weight: var(--bold);
   text-transform: uppercase;
   line-height: var(--lh1);
 }
@@ -21,13 +22,14 @@
   margin-bottom: var(--ms-1);
   font-size: var(--ms0);
 
-  & *:last-child { margin-bottom: 0; }
+  & > * { margin-bottom: var(--ms0); }
+  & > *:last-child { margin-bottom: 0; }
 
-  & p { margin-bottom: var(--ms0); }
+  & p { line-height: var(--lh3); }
 
   & a { @apply --standardLink; }
 
-  & strong { font-weight: 600; }
+  & strong { font-weight: var(--bold); }
 
   & em { font-style: italic; }
 
@@ -36,13 +38,15 @@
   & h3,
   & h4,
   & h5,
-  & h6 { font-weight: 600; }
+  & h6 {
+    font-weight: var(--bold);
+    line-height: var(--lh1);
+  }
 
   & h1 { font-size: var(--ms2); }
   & h2 { font-size: var(--ms1); }
 
   & blockquote {
-    margin-bottom: var(--ms0);
     border-left: var(--border1);
     padding-left: var(--ms0);
   }
@@ -51,7 +55,6 @@
 
   & ol,
   & ul {
-    margin-bottom: var(--ms0);
     padding-left: var(--ms0);
     list-style-type: none;
   }

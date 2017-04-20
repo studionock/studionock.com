@@ -3,26 +3,9 @@
 {{ end }}
 
 {{ define "main" }}
-<article class="article">
-  <header class="article__header">
-    {{ if isset .Params "img" }}
-      <div class="article__titleImage">
-        <img src="{{ .Params.img }}" role="presentation" />
-      </div>
-    {{ end }}
-
-    <h1 class="article__header__title balance-text">
-      {{ .Title }}
-    </h1>
-    <p class="article__header__meta">
-      <time pubdate="pubdate" datetime="{{ .Date | dateFormat "2006-01-02T15:04:05Z07:00" }}">
-        Published on {{ .Date | dateFormat "January 2, 2006" }}
-      </time>
-    </p>
-  </header>
-
-  <div class="article__content">
+<section class="page">
+  <div class="article__content page__content">
     {{ .Content }}
   </div>
-</article>
+</section>
 {{ end }}

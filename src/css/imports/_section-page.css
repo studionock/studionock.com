@@ -1,0 +1,26 @@
+@import "_variables.css";
+
+.page__content {
+  & > * { margin-bottom: var(--ms0); }
+  & > *:last-child { margin-bottom: 0; }
+
+  & h1,
+  & h2,
+  & h3,
+  & h4,
+  & h5,
+  & h6 {
+    font-size: var(--ms0);
+    font-weight: var(--normal);
+    line-height: var(--lh1);
+  }
+
+  & h1 { text-transform: uppercase; }
+  & p { line-height: var(--lh3); }
+}
+
+.page__map {
+  width: 100%;
+  margin-top: -var(--ms1);
+  margin-bottom: -var(--ms1);
+}

@@ -10,10 +10,14 @@ menu:
 
 # Visit us
 
-Studio NOCK  
-Södra Larmgatan 7  
-Gothenburg
+<div class="page__map">
+  <img class="page__map__img" src="/map.svg" role="presentation" />
+</div>
 
-OPEN MAY 9-28  
-Tuesday-Friday 11-19  
-Saturday-Sunday 12-16
+*Studio NOCK*  
+*Södra Larmgatan 7*  
+*Gothenburg*
+
+*OPEN MAY 9-28*  
+*Tuesday-Friday 11-19*  
+*Saturday-Sunday 12-16*

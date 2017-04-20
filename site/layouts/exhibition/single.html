@@ -1,3 +1,17 @@
+{{ define "title" }}
+  {{ .Title }} &mdash; An exhibition from {{ .Site.Title }}
+{{ end }}
+
 {{ define "main" }}
-  {{ .Content }}
+  <article class="article exhibition">
+    <header class="article__header">
+      <h1 class="article__header__title sr-only balance-text">
+        {{ .Title }}
+      </h1>
+    </header>
+
+    <div class="article__content exhibition__content">
+      {{ .Content }}
+    </div>
+  </article>
 {{ end }}
