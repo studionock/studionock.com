@@ -1,9 +1,0 @@
-[build]
-  publish = "dist"
-  command = "npm run build"
-
-[environment]
-  HUGO_VERSION = "hugo_0.19"
-
-[context.deploy-preview]
-  command = "npm run build:preview"
