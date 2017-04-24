@@ -4,13 +4,13 @@ draft: false
 title: "A Print"
 description: "An open archive of architecture publications"
 images:
-  - http://res.cloudinary.com/adambrgmn/image/upload/v1492619854/studio-nock/a-print.png
+  - https://res.cloudinary.com/adambrgmn/image/upload/v1492619854/studio-nock/a-print.png
 menu:
   main:
     weight: 1
 ---
 
-![A print poster by Rickard Jakobsson](http://res.cloudinary.com/adambrgmn/image/upload/v1492619854/studio-nock/a-print.png)
+![A print poster by Rickard Jakobsson](https://res.cloudinary.com/adambrgmn/image/upload/v1492619854/studio-nock/a-print.png)
 
 A PRINT  
 An open archive of architecture publications
