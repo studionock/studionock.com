@@ -4,7 +4,9 @@
 
 {{- .Hugo.Generator -}}
 
-{{ partial "social" . }}
+{{ with .Site.Social.facebook_app_id }}<meta property="fb:app_id" content="{{ . }}">{{ end }}
+{{ template "_internal/opengraph.html" . }}
+{{ template "_internal/schema.html" . }}
 
 {{- with .Site.Params.google_verify_meta -}}
   <meta name="google-site-verification" content="{{ . }}" />
