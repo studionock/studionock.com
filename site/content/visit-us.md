@@ -8,8 +8,6 @@ menu:
 
 ---
 
-# Visit us
-
 <div class="page__map">
   <img class="page__map__img" src="/map.svg" role="presentation" />
 </div>
@@ -18,6 +16,6 @@ menu:
 *Södra Larmgatan 7*  
 *Gothenburg*
 
-*OPEN MAY 9-28*  
+*OPEN MAY 10-28*  
 *Tuesday-Friday 11-19*  
 *Saturday-Sunday 12-16*
