@@ -17,5 +17,5 @@ menu:
 *Gothenburg*
 
 *OPEN MAY 10-28*  
-*Tuesday-Friday 11-19*  
+*Wednesday-Friday 12-19*  
 *Saturday-Sunday 12-16*

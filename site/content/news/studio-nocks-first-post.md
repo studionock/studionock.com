@@ -2,6 +2,8 @@
 date: "2017-04-04T23:41:58+02:00"
 draft: false
 title: "Studio NOCK's first post"
+images:
+  - http://res.cloudinary.com/adambrgmn/image/upload/v1492619529/studio-nock/sketch.jpg
 ---
 
 Hi!

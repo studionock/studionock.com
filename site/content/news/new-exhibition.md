@@ -2,6 +2,9 @@
 date: "2017-04-06T23:31:52+02:00"
 draft: false
 title: "New exhibition!"
+description: "A PRINT - our first exhibition"
+images:
+  - http://res.cloudinary.com/adambrgmn/image/upload/v1492619854/studio-nock/a-print.png
 ---
 
 We are so glad to announce our first exhibition:
