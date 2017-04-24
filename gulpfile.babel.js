@@ -32,7 +32,7 @@ const PATHS = {
 };
 
 const browserSync = BrowserSync.create();
-const hugoTask = hugo(browserSync, ['--buildDrafts']);
+const hugoTask = hugo(browserSync, ['--buildDrafts'], process.env.HUGO_VERSION);
 
 function clean() {
   return del(PATHS.clean);
@@ -87,7 +87,7 @@ export function test() {
 export const build = gulp.series(
   clean,
   gulp.parallel(
-    hugo(browserSync),
+    hugo(browserSync, undefined, process.env.HUGO_VERSION),
     css,
     js('production'),
   ),
