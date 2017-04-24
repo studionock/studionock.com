@@ -3,25 +3,28 @@
 {{ end }}
 
 {{ define "main" }}
-<article class="article">
+<article class="article" itemscope itemtype='http://schema.org/Article'>
+  {{ with .Site.LanguageCode }}<meta itemprop='inLanguage' content='{{ . }}'/>{{ end }}
+  {{ with .Description }}<meta itemprop='about' content='{{ . }}' />{{ end }}
+  <meta itemprop='isFamilyFriendly' content='True'/>
   <header class="article__header">
     {{ if isset .Params "img" }}
-      <div class="article__titleImage">
-        <img src="{{ .Params.img }}" role="presentation" />
+      <div class="article__titleImage" itemprop='associatedMedia' itemscope itemtype='http://schema.org/ImageObject'>
+        <img src="{{ .Params.img }}" role="presentation" itemprop='contentURL' />
       </div>
     {{ end }}
 
-    <h1 class="article__header__title balance-text">
+    <h1 class="article__header__title balance-text" itemprop='name headline'>
       {{ .Title }}
     </h1>
     <p class="article__header__meta">
-      <time pubdate="pubdate" datetime="{{ .Date | dateFormat "2006-01-02T15:04:05Z07:00" }}">
+      <time pubdate="pubdate" datetime="{{ .Date | dateFormat "2006-01-02T15:04:05Z07:00" }}" itemprop='datePublished'>
         Published on {{ .Date | dateFormat "January 2, 2006" }}
       </time>
     </p>
   </header>
 
-  <div class="article__content">
+  <div class="article__content" itemprop='articleBody'>
     {{ .Content }}
   </div>
 </article>

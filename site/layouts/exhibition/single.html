@@ -3,14 +3,17 @@
 {{ end }}
 
 {{ define "main" }}
-  <article class="article exhibition">
+  <article class="article exhibition" itemscope itemtype='http://schema.org/Article'>
+    {{ with .Site.LanguageCode }}<meta itemprop='inLanguage' content='{{ . }}'/>{{ end }}
+    {{ with .Description }}<meta itemprop='about' content='{{ . }}' />{{ end }}
+    <meta itemprop='isFamilyFriendly' content='True'/>
     <header class="article__header">
-      <h1 class="article__header__title sr-only balance-text">
+      <h1 class="article__header__title sr-only balance-text" itemprop='name headline'>
         {{ .Title }}
       </h1>
     </header>
 
-    <div class="article__content exhibition__content">
+    <div class="article__content exhibition__content" itemprop='articleBody'>
       {{ .Content }}
     </div>
   </article>
