@@ -20,8 +20,9 @@ const PATHS = {
     dest: './dist',
   },
   css: {
-    src: './src/css/**/*.css',
+    src: './src/css/*.css',
     dest: './dist/css',
+    maps: './maps',
     main: './src/css/main.css',
   },
   hugo: {
@@ -61,7 +62,7 @@ function css() {
     .pipe(sourcemaps.init())
     .pipe(postcss(postcssPlugins))
     .pipe(cleanCss({ compatability: 'ie8' }))
-    .pipe(sourcemaps.write())
+    .pipe(sourcemaps.write(PATHS.css.maps))
     .pipe(gulp.dest(PATHS.css.dest))
     .pipe(browserSync.stream());
 }
