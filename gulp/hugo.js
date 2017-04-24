@@ -53,7 +53,7 @@ export default function hugo(browserSync, options = [], bin = 'hugo') {
   const args = ['-d', '../dist', '-s', 'site', '-v', ...options];
 
   const ret = (done) => {
-    gutil.log('[hugo]', 'Running hugo\n\n');
+    gutil.log('[hugo]', `Running ${bin}\n\n`);
     const child = cp.spawn(bin, args, { stdio: [null, 'pipe', 'inherit'] });
     child.stdout.pipe(new Stream());
 
