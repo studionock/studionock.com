@@ -93,6 +93,15 @@ export const build = gulp.series(
   ),
 );
 
+export const buildPreview = gulp.series(
+  clean,
+  gulp.parallel(
+    hugoTask,
+    css,
+    js('production'),
+  ),
+);
+
 export const start = gulp.series(
   clean,
   gulp.parallel(

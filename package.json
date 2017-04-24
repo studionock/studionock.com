@@ -6,6 +6,7 @@
   "scripts": {
     "start": "gulp start",
     "build": "gulp build",
+    "build:preview": "gulp buildPreview",
     "test": "gulp test",
     "lint:js": "eslint src",
     "lint:css": "stylelint 'src/css/**/*.css'",
