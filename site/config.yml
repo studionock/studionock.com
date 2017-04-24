@@ -9,6 +9,7 @@ MetaDataFormat: "yaml"
 googleAnalytics: "UA-93481692-1"
 
 params:
+  google_verify_meta: "lMtxyxr11DRqovQZElaTngvbj9gu807P8p9HQ23rhK8"
   description: "Studio NOCK is an independent platform dedicated to architecture"
   contact:
     email: "info@studionock.com"
