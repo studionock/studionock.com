@@ -3,7 +3,7 @@ date: "2017-04-04T23:41:58+02:00"
 draft: false
 title: "Studio NOCK's first post"
 images:
-  - https://res.cloudinary.com/adambrgmn/image/upload/v1492619529/studio-nock/sketch.jpg
+  - https://res.cloudinary.com/adambrgmn/image/upload/c_crop,g_face,h_630,w_1200/v1492619529/studio-nock/sketch.jpg
 ---
 
 Hi!

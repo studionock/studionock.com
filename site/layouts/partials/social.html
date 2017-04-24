@@ -1,0 +1,25 @@
+<!-- Search Engine -->
+<meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ if .IsPage }}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}">
+{{ with .Params.images }}{{ range first 1 . }}
+  <meta name="image" content="{{ . | absURL }}">
+{{ end }}{{ end }}
+
+<!-- Schema.org for Google -->
+<meta itemprop="name" content="{{ .Title }}">
+<meta itemprop="description" content="{{ with .Description }}{{ . }}{{ else }}{{ if .IsPage }}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}">
+{{ with .Params.images }}{{ range first 1 . }}
+  <meta itemprop="image" content="{{ . | absURL }}">
+{{ end }}{{ end }}
+
+<!-- Open Graph general (Facebook, Pinterest & Google+) -->
+<meta name="og:title" content="{{ .Title }}">
+<meta name="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ if .IsPage }}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}">
+<meta name="og:url" content="{{ .Permalink }}">
+<meta name="og:site_name" content="{{ .Site.Title }}">
+<meta name="og:locale" content="{{ .Site.LanguageCode }}">
+{{ with .Site.Params.fb_app_id }}<meta name="fb:app_id" content="{{ . }}">{{ end }}
+{{ with .Site.Params.fb_admin }}<meta name="fb:admins" content="{{ . }}">{{ end }}
+<meta name="og:type" content="website">
+{{ with .Params.images }}{{ range first 6 . }}
+  <meta property="og:image" content="{{ . | absURL }}" />
+{{ end }}{{ end }}
