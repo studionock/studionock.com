@@ -1,10 +1,9 @@
 import test from 'tape';
-import app from './app';
 
-test('App()', (t) => {
-  const should = 'Should return greeting';
-  const actual = app('me');
-  const expected = 'Hello me!';
+test('No tests initiated yet', (t) => {
+  const should = 'No tests initiated yet';
+  const actual = 'No tests initiated yet';
+  const expected = 'No tests initiated yet';
 
   t.equal(actual, expected, should);
   t.end();
