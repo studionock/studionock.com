@@ -3,8 +3,8 @@ set -e
 
 ENV=$1
 
-if [[ $ENV == 'staging' ]]; then
-  now dist/ -t ${NOW_TOKEN} -c now.staging.json
-else
-  now dist/ -t ${NOW_TOKEN} -c now.json
-fi
+cp now.${ENV}.json dist/now.json
+cd dist/
+
+now -t ${NOW_TOKEN}
+now alias -t ${NOW_TOKEN}

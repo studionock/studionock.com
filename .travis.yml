@@ -1,17 +1,26 @@
-language: node_js
-node_js:
-  - '7'
-cache: yarn
+language: go
+go:
+  - 1.8
+
 branches:
   only:
     - master
     - develop
     - /^v.*$/
+
 before_install:
-  - go get -v github.com/spf13/hugo
+  - go get github.com/kardianos/govendor
+  - . $HOME/.nvm/nvm.sh
+  - nvm install stable
+  - nvm use stable
+install:
+  - govendor get github.com/spf13/hugo
+  - npm install
+
 before_script:
   - npm install -g now
-script: yarn test && yarn run build
+script: npm test && npm run build
+
 deploy:
   - provider: script
     script: scripts/deploy.sh production
@@ -24,6 +33,7 @@ deploy:
     skip_cleanup: true
     on:
       branch: develop
+
 notifications:
   email: false
   slack:
