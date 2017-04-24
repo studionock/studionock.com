@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="{{ .Lang }}">
   <head>
+    {{ "<!-- Studio NOCK -->" | safeHTML }}
     <title>{{ block "title" . }}{{ .Site.Title }} &mdash; {{ .Site.Params.description }}{{ end }}</title>
     {{ partial "head" . }}
   </head>
