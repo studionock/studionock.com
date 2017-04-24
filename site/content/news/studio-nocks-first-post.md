@@ -14,4 +14,4 @@ Hope that you want to join us in this!
 
 // Studio NOCK
 
-![A sketch](https://res.cloudinary.com/adambrgmn/image/upload/v1492619529/studio-nock/sketch.jpg)
+{{< img "sketch.jpg" "A sketch" >}}

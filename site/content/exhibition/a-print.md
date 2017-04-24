@@ -10,7 +10,7 @@ menu:
     weight: 1
 ---
 
-![A print poster by Rickard Jakobsson](https://res.cloudinary.com/adambrgmn/image/upload/v1492619854/studio-nock/a-print.png)
+{{< img "a-print.png" "A PRINT poster by Rickard Jakobsson" >}}
 
 A PRINT  
 An open archive of architecture publications

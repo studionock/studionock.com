@@ -28,4 +28,4 @@ Follow the event on Facebook [@studionock](https://www.facebook.com/studionock/)
 
 //Studio NOCK
 
-![Drawing for A PRINT by Rickard Jakobsson](https://res.cloudinary.com/adambrgmn/image/upload/v1492619854/studio-nock/a-print.png)
+{{< img "a-print.png" "A PRINT poster by Rickard Jakobsson" >}}

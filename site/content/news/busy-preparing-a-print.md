@@ -4,11 +4,11 @@ draft: false
 title: "Busy preparing A PRINT"
 description: "We are busy with the preparations for the exhibition A PRINT"
 images:
-  - https://res.cloudinary.com/adambrgmn/image/upload/v1493026576/studio-nock/poster_pa%CC%8A_va%CC%88gg_02.jpg
+  - https://res.cloudinary.com/adambrgmn/image/upload/v1493026576/studio-nock/poster.jpg
 
 ---
 
-![Busy preparing](https://res.cloudinary.com/adambrgmn/image/upload/v1493026576/studio-nock/poster_pa%CC%8A_va%CC%88gg_02.jpg)
+{{< img "poster.jpg" "Hanging posters for A PRINT" >}}
 
 We are busy with the preparations for the exhibition A PRINT.
 
