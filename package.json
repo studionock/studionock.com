@@ -1,6 +1,6 @@
 {
   "name": "studionock",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Source code for studionock.com",
   "main": "index.js",
   "scripts": {
