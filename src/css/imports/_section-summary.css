@@ -1,4 +1,4 @@
-@import "_variables.css";
+@import "./_variables.css";
 
 .summary__title {
   font-size: var(--ms1);

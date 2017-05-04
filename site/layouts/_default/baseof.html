@@ -25,7 +25,11 @@
       </div>
     </div>
 
-    {{ template "_internal/google_analytics_async.html" . }}
-    <script src="/app.js" async></script>
+    {{ partial "styles" . }}
+    {{ partial "scripts" . }}
+
+    {{ if eq (getenv "NODE_ENV") "production" }}
+      {{ template "_internal/google_analytics_async.html" . }}
+    {{ end }}
   </body>
 </html>

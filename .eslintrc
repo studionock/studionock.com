@@ -1,12 +1,11 @@
 {
-  "parser": "babel-eslint",
-  "extends": ["airbnb", "plugin:flowtype/recommended"],
-  "plugins": ["flowtype"],
+  "extends": "airbnb-base",
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true
+  },
   "rules": {
-    "no-console": 0,
-
-    "import/no-extraneous-dependencies": ["error", {
-      "devDependencies": ["**/*.test.js", "**/*.spec.js", "webpack*", "gulpfile*", "**/*/gulp/*.js"]
-    }]
+    "no-console": 0
   }
 }

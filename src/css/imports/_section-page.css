@@ -1,4 +1,4 @@
-@import "_variables.css";
+@import "./_variables.css";
 
 .page__content {
   & > * { margin-bottom: var(--ms0); }

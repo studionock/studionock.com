@@ -1,4 +1,10 @@
-/dist
+dist
+.temp
+
+# Hash tables and hashed assets
+site/data/hash
+site/static/assets
+site/static/uploads
 
 # Logs
 logs

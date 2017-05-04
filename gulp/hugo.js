@@ -1,74 +1,74 @@
-import cp from 'child_process';
-import { Writable } from 'stream';
-import gutil from 'gulp-util';
+const cp = require('child_process');
+const path = require('path');
+const gutil = require('gulp-util');
 
-function truncate(str, length = 100) {
-  if (str.length < length) return `  ${str}`;
+const PLUGIN_NAME = 'gulp-hugo';
 
-  const regEx = new RegExp(`.{0,${length}}`, 'g');
-  const lines = str.match(regEx);
-  return lines.map((line) => {
-    const trimmed = line.trim();
-    return `  ${trimmed}`;
-  }).join('\n');
+const filterMessages = (containing) => (message) => {
+  const lines = message.split('\n');
+  return lines
+    .filter(str => str.toLowerCase().includes(containing.toLowerCase()))
 }
 
-class Stream extends Writable {
-  _write(chunk, encoding, cb) { // eslint-disable-line class-methods-use-this
-    const lines = chunk.toString()
-      .split('\n')
-      .filter(line => line !== '')
-      .map(line => line.trim())
-      .map((line) => {
-        const regEx = /(\d{2,}(\/|:)\d{2,}(\/|:)\d{2,})/;
-        const words = line.split(' ');
-        const head = words[0];
-        const tail = words
-          .slice(1)
-          .filter(str => !regEx.test(str))
-          .join(' ');
+const filterNone = filterMessages('');
+const filterWarnings = filterMessages('WARN');
+const filterErrors = filterMessages('ERROR');
 
-        let newHead = gutil.colors.grey(`${head}`);
-        if (head === 'INFO') newHead = gutil.colors.blue(`${head}`);
-        if (head === 'WARN') newHead = gutil.colors.yellow(`${head}`);
-        if (head === 'ERROR') newHead = gutil.colors.red(`${head}`);
-        if (head === 'Started' || head === 'Built') newHead = gutil.colors.white(`${head}`);
+const formatOutput = messages => messages.map((msg) => {
+  if (msg.toLowerCase().includes('warn')) return gutil.colors.yellow(msg);
+  if (msg.toLowerCase().includes('error')) return gutil.colors.red(msg);
+  return msg;
+}).join('\n  ');
 
-        let newTail = gutil.colors.grey(tail);
-        if (head === 'Started' || head === 'Built') newTail = gutil.colors.white(tail);
-
-        let newLine = '\n';
-        if (head === 'Started' || head === 'Built') newLine = '\n\n';
-
-        const joined = truncate(`${newHead} ${newTail}`);
-        return `${newLine}${joined}`; // eslint-disable-line prefer-template
-      });
-
-    gutil.log(...lines, '\n');
-    cb();
+const constructArgs = (opts) => {
+  const flags = {
+    buildDrafts: ['-D'],
+    buildExpired: ['-E'],
+    buildFuture: ['-F'],
+    dest: ['-d', path.resolve(opts.dest || 'dist')],
+    src: ['-s', path.resolve(opts.src || '')],
   }
-}
 
-export default function hugo(browserSync, options = [], bin = 'hugo') {
-  const args = ['-d', '../dist', '-s', 'site', '-v', ...options];
+  return Object.keys(opts).reduce((acc, key) => {
+    if (!opts[key] || !flags[key]) return acc;
+    return [...acc, ...flags[key], '-v'];
+  }, []);
+};
 
-  const ret = (done) => {
-    gutil.log('[hugo]', `Running ${bin}\n\n`);
-    const child = cp.spawn(bin, args, { stdio: [null, 'pipe', 'inherit'] });
-    child.stdout.pipe(new Stream());
+module.exports = (opts = {}) => {
+  const processArgs = constructArgs(opts);
 
-    child.on('close', (code) => {
+  return new Promise((resolve, reject) => {
+    const hugoProcess = cp.spawn(
+      opts.bin || 'hugo',
+      processArgs
+    );
+
+    let all = [];
+    let warnings = [];
+    let errors = [];
+
+    hugoProcess.stdout.on('data', (data) => {
+      const str = data.toString();
+
+      all = [...all, ...filterNone(str)];
+      warnings = [...warnings, ...filterWarnings(str)];
+      errors = [...errors, ...filterErrors(str)];
+    });
+
+    hugoProcess.on('close', (code) => {
       if (code === 0) {
-        browserSync.reload();
-        done();
+        if (opts.verbose && !opts.warningsOnly) gutil.log(PLUGIN_NAME, '\n  ', formatOutput(all));
+        if (opts.warningsOnly) gutil.log(PLUGIN_NAME, '\n  ', formatOutput(warnings));
+        return resolve();
       } else {
-        const err = new Error(`Hugo build failed 😰 (with code ${code})`);
-        browserSync.notify(err);
-        done(err);
+        const err = formatOutput(errors);
+
+        if (!opts.noThrow) return reject(new gutil.PluginError(PLUGIN_NAME, err));
+
+        gutil.log(PLUGIN_NAME, '\n  ', err);
+        return resolve();
       }
     });
-  };
-
-  Object.defineProperty(ret, 'name', { value: 'hugo' });
-  return ret;
-}
+  });
+};

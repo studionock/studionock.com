@@ -1,0 +1,38 @@
+{{ if eq (getenv "NODE_ENV") "production" }}
+  <noscript id="deferred-styles">
+    {{ $mainFileName := index .Site.Data.hash.css "main.css" | default "main.css" }}
+    <link rel="stylesheet" type="text/css" href="/assets/css/{{ $mainFileName }}" />
+
+    {{ if isset .Params "css" }}
+      {{ range .Params.css }}
+        {{ $fileName := index $.Site.Data.hash.css . | default .}}
+        <link rel="stylesheet" type="text/css" href="/assets/css/{{ $fileName }}" />
+      {{ end }}
+    {{ end }}
+  </noscript>
+
+  <script>
+    function loadDeferredStyles(id) {
+      var elId = id || 'deferred-styles';
+      var addStylesNode = document.getElementById(elId);
+      var replacement = document.createElement('div');
+
+      replacement.innerHTML = addStylesNode.textContent;
+      document.body.appendChild(replacement);
+      addStylesNode.parentElement.removeChild(addStylesNode);
+    }
+
+    var raf = requestAnimationFrame ||
+      mozRequestAnimationFrame ||
+      webkitRequestAnimationFrame ||
+      msRequestAnimationFrame;
+
+    if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
+    else window.addEventListener('load', loadDeferredStyles);
+  </script>
+{{ else }}
+  <link rel="stylesheet" type="text/css" href="/assets/css/main.css" />
+  {{ if isset .Params "css" }}
+    {{ range .Params.css }}<link rel="stylesheet" type="text/css" href="/assets/css/{{ . }}" />{{ end }}
+  {{ end }}
+{{ end }}
