@@ -4,7 +4,7 @@ draft: false
 title: "New exhibition!"
 description: "A PRINT - our first exhibition"
 images:
-  - https://res.cloudinary.com/adambrgmn/image/upload/c_crop,g_face,h_630,w_1200/v1492619854/studio-nock/a-print.png
+  - /uploads/a-print-fb.jpg
 ---
 
 We are so glad to announce our first exhibition:
@@ -28,4 +28,4 @@ Follow the event on Facebook [@studionock](https://www.facebook.com/studionock/)
 
 //Studio NOCK
 
-{{< img "a-print.png" "A PRINT poster by Rickard Jakobsson" >}}
+![A PRINT poster by Rickard Jakobsson](/uploads/a-print.jpg)

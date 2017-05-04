@@ -1,12 +1,12 @@
 {{ $cloudinaryUrl := "https://res.cloudinary.com/adambrgmn/image/upload" }}
 <p>
   <img
-    srcset="{{ $cloudinaryUrl }}/c_scale,w_740/v1493026576/studio-nock/{{ .Get 0 }} 740w,
-            {{ $cloudinaryUrl }}/c_scale,w_640/v1493026576/studio-nock/{{ .Get 0 }} 640w,
-            {{ $cloudinaryUrl }}/c_scale,w_370/v1493026576/studio-nock/{{ .Get 0 }} 370w,
-            {{ $cloudinaryUrl }}/c_scale,w_320/v1493026576/studio-nock/{{ .Get 0 }} 320w"
+    srcset="/uploads/{{ replaceRE "^(.+)(.{1})(png|gif|jpg|jpeg)$" "$1-w_740.$3" (.Get 0) }} 740w,
+            /uploads/{{ replaceRE "^(.+)(.{1})(png|gif|jpg|jpeg)$" "$1-w_640.$3" (.Get 0) }} 640w,
+            /uploads/{{ replaceRE "^(.+)(.{1})(png|gif|jpg|jpeg)$" "$1-w_370.$3" (.Get 0) }} 370w,
+            /uploads/{{ replaceRE "^(.+)(.{1})(png|gif|jpg|jpeg)$" "$1-w_320.$3" (.Get 0) }} 320w"
     sizes="(min-width: 30em) calc(100vw - 2rem), 23em"
-    src="{{ $cloudinaryUrl }}/c_scale,w_370/v1493026576/studio-nock/{{ .Get 0 }}"
+    src="/uploads/{{ replaceRE "^(.+)(.{1})(png|gif|jpg|jpeg)$" "$1-w_740.$3" (.Get 0) }}"
     {{ if len .Params | eq 2 }}alt="{{ .Get 1 }}"{{ end }}
   />
 </p>
