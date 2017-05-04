@@ -3,8 +3,7 @@ set -e
 
 ENV=$1
 
-cp now.${ENV}.json dist/now.json
-cd dist/
+cp now.${ENV}.json now.json
 
 now -t ${NOW_TOKEN}
 now alias -t ${NOW_TOKEN}
