@@ -23,7 +23,7 @@ EXHIBITION PERIOD: MAY 10 - 28
 OPEN: WEDNESDAY-FRIDAY 12-19  
 SATURDAY-SUNDAY 12-16
 
-2ha • Accattone • Architektur in Gebrauch • Bricks from the Kiln • Camenzind • CARTHA • civic city • CLOG • Club Donny • Colon • Ein Magazin Über Orte • engawa • Evil People in Modernist Homes in Popular Films • EYESORE • Flaneur • Fresh Meat • Friendly Fire • Horizonte • KOTE • KRITIK • LOBBY • Log • MacGuffin Magazine • MAP • Mas Context • Megawords • MIGRANT JOURNAL • mono.kultur • MONU • New Geographies • PAPER • PIN-UP • Pisegrama • PLAT • Pli • Polemik • Real Review• San Rocco • Scapegoat • SITE • SOILED • STAND BY ME • STUDIO • terra  rma • The Modernist • The Plantation Journal• Thresholds • trans magazin • YUCA
+2ha • Accattone • Architektur in Gebrauch • Bricks from the Kiln • Camenzind • CARTHA • civic city • CLOG • Club Donny • Colon • Ein Magazin Über Orte • engawa • Evil People in Modernist Homes in Popular Films • EYESORE • Flaneur • Fresh Meat • Friendly Fire • Horizonte • KOTE • KRITIK • LOBBY • Log • MacGuffin Magazine • MAP • Mas Context • Megawords • MIGRANT JOURNAL • mono.kultur • MONU • New Geographies • PAPER • PIN-UP • Pisegrama • PLAT • Pli • Polemik • Real Review • San Rocco • Scapegoat • SITE • SOILED • STAND BY ME • STUDIO • terra firma • The Modernist • The Plantation Journal • Thresholds • trans magazin • YUCA
 
 **TALKS AND HAPPENINGS, TO BE ANNOUNCED**
 
