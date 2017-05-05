@@ -29,6 +29,6 @@ SATURDAY-SUNDAY 12-16
 
 A PRINT is a collection, an open archive and an exhibition of independent architecture publications and zines. The ambition is to promote and showcase alternative publications for innovative commentary and criticism on architecture.
 
-These publications are an important contribution to the archi- tectural discourse, allowing for independent, mainly non-pro t, editors to cover a broader range of topics than what is custom in conventional architectural magazines.
+These publications are an important contribution to the architectural discourse, allowing for independent, mainly non-profit, editors to cover a broader range of topics than what is custom in conventional architectural magazines.
 
-The titles showcased in A PRINT represent more than ten diffe- rent countries. Some focuses on one single phenomena or per- son, others are a collection of thoughts on a larger theme. No matter what the subject of the print is they all have something in common, that being that they are striving to bring something new to the discipline.
+The titles showcased in A PRINT represent more than ten different countries. Some focuses on one single phenomena or person, others are a collection of thoughts on a larger theme. No matter what the subject of the print is they all have something in common, that being that they are striving to bring something new to the discipline.
