@@ -1,3 +1,16 @@
 .exhibition__content {
   text-align: left;
 }
+
+.sponsors {
+  text-align: center;
+}
+
+.sponsors img {
+  width: calc(50% - 1rem);
+  margin-right: 1rem;
+
+  &:nth-child(even) {
+    margin-right: 0;
+  }
+}

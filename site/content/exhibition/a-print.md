@@ -32,3 +32,16 @@ A PRINT is a collection, an open archive and an exhibition of independent archit
 These publications are an important contribution to the architectural discourse, allowing for independent, mainly non-profit, editors to cover a broader range of topics than what is custom in conventional architectural magazines.
 
 The titles showcased in A PRINT represent more than ten different countries. Some focuses on one single phenomena or person, others are a collection of thoughts on a larger theme. No matter what the subject of the print is they all have something in common, that being that they are striving to bring something new to the discipline.
+
+## SPONSORS
+{{< sponsors >}}
+![Kjellgren Kaminsky](/uploads/sponsorer/kjellgren-kaminsky.png)
+![Propeer](/uploads/sponsorer/propeer.png)
+![da Matteo](/uploads/sponsorer/da-matteo.png)
+![White](/uploads/sponsorer/white.png)
+![All Coating](/uploads/sponsorer/all-coating.png)
+![HDK](/uploads/sponsorer/hdk.png)
+![Our Legacy](/uploads/sponsorer/our-legacy.png)
+![Bornstein Lyckefors](/uploads/sponsorer/bornstein-lyckefors.png)
+![Svensk Form](/uploads/sponsorer/svensk-form.png)
+{{</ sponsors >}}

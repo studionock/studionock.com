@@ -47,9 +47,9 @@ const PATHS = {
     watch: 'src/img/**/*.{jpg,jpeg,png,gif,svg}',
   },
   uploads: {
-    src: 'src/uploads/*.{jpg,jpeg,png,gif,svg}',
+    src: 'src/uploads/**/*.{jpg,jpeg,png,gif,svg}',
     dest: { DEV: '.temp/uploads', PROD: 'site/static/uploads' },
-    watch: 'src/uploads/*.{jpg,jpeg,png,gif,svg}',
+    watch: 'src/uploads/**/*.{jpg,jpeg,png,gif,svg}',
   },
   favicon: {
     src: 'src/favicon.png',
