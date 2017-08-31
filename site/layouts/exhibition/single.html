@@ -7,7 +7,7 @@
     <h1 class="header__title">
       <a href="/">
         <span class="header__title__text sr-only">Studio NOCK</span>
-        <svg class="header__title__logotype" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 131.32">
+        <svg class="header__title__logotype" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 600 131.32">
           <title>Studio NOCK</title>
           <desc>Logotype for Studio NOCK</desc>
           <path d="M76.33 3.35v66.52L32.82 3.4H0v124.13h33.09V60.5l43.47 67.03h33.09V3.35H76.33zM219.35 100.44c-18.12 0-32.82-15.38-32.82-34.35s14.69-34.35 32.82-34.35 32.82 15.38 32.82 34.35-14.69 34.35-32.82 34.35M219.37 0c-36.59 0-66.25 29.4-66.25 65.66s29.66 65.66 66.25 65.66 66.25-29.4 66.25-65.66S256 0 219.37 0M417.69 85.72a32.37 32.37 0 0 1-26.91 14.72c-18.12 0-32.82-15.38-32.82-34.35s14.69-34.35 32.82-34.35a31.76 31.76 0 0 1 20.44 7.5l24.68-21.67A66.33 66.33 0 0 0 390.8 0c-36.59 0-66.25 29.4-66.25 65.66s29.66 65.66 66.25 65.66A66.33 66.33 0 0 0 443 106.1zM557.88 3.36l-34.09 41.53V3.37h-34.12V127.8l34.21-.26v-41.6l34.08 41.75h40.57l-49.41-65.51L600 3.36h-42.12z"/>
@@ -18,17 +18,17 @@
 {{ end }}
 
 {{ define "main" }}
-  <article class="article exhibition" itemscope itemtype='http://schema.org/Article'>
-    {{ with .Site.LanguageCode }}<meta itemprop='inLanguage' content='{{ . }}'/>{{ end }}
-    {{ with .Description }}<meta itemprop='about' content='{{ . }}' />{{ end }}
-    <meta itemprop='isFamilyFriendly' content='True'/>
+  <article class="article exhibition" itemscope itemtype="http://schema.org/Article">
+    {{ with .Site.LanguageCode }}<meta itemprop="inLanguage" content="{{ . }}"/>{{ end }}
+    {{ with .Description }}<meta itemprop="about" content="{{ . }}" />{{ end }}
+    <meta itemprop="isFamilyFriendly" content="True"/>
     <header class="article__header">
-      <h1 class="article__header__title sr-only balance-text" itemprop='name headline'>
+      <h1 class="article__header__title sr-only balance-text" itemprop="name headline">
         {{ .Title }}
       </h1>
     </header>
 
-    <div class="article__content exhibition__content" itemprop='articleBody'>
+    <div class="article__content exhibition__content" itemprop="articleBody">
       {{ .Content }}
     </div>
   </article>
