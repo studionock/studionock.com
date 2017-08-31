@@ -1,6 +1,7 @@
 ---
 date: "2017-04-06T22:46:58+02:00"
 draft: false
+type: "exhibitions"
 title: "A PRINT - GOTHENBURG"
 description: "An open archive of architecture publications"
 images:
@@ -12,7 +13,7 @@ params:
 
 ![Poster for A PRINT created by Rickard Jakobsson](/uploads/a-print.jpg)
 
-A PRINT  
+A PRINT - GOTHENBURG  
 An open archive of architecture publications
 
 A PRINT is a collection, an open archive and an exhibition of independent architecture publications and zines. The ambition is to promote and showcase alternative publications for innovative commentary and criticism on architecture. These publications are an important contribution to the architectural discourse, allowing for independent, mainly non-pro t, editors to cover a broader range of topics than what is custom in conventional architectural magazines.

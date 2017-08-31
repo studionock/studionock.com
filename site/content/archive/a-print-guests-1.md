@@ -2,6 +2,7 @@
 title: "A PRINT GUESTS #1"
 date: 2017-05-13T12:00:00+02:00
 draft: false
+type: "exhibitions"
 
 params:
   description: "A talk with MIGRANT JOURNAL and PAPER as part of the exhibition A PRINT"

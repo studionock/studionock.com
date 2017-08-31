@@ -16,6 +16,6 @@ body {
   margin: 0 auto;
 
   @media (--breakpoint-not-small) {
-    width: 25rem;
+    width: 28rem;
   }
 }
