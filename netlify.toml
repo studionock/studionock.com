@@ -1,5 +1,5 @@
 [build]
-  command = "gulp build"
+  command = "yarn && gulp build"
   publish = "dist"
 
 [context.production]
