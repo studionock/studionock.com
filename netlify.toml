@@ -5,9 +5,11 @@
 [context.production]
   [context.production.environment]
     HUGO_VERSION = "0.26"
+    YARN_VERSION = "0.27.5"
     NODE_ENV = "production"
 
 [context.branch-deploy]
   [context.branch-deploy.environment]
     HUGO_VERSION = "0.26"
+    YARN_VERSION = "0.27.5"
     NODE_ENV = "production"
