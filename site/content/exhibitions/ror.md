@@ -24,11 +24,12 @@ NOCK held a 4 days workshop for all Architecture and Architecture and Engineerin
 ![RÖR WORKSHOP](/uploads/ror-08.jpg)
 ![RÖR WORKSHOP](/uploads/ror-09.jpg)
 {{</ slideshow >}}
+
 When investigating all components and technical installations of a building one can learn how to use what is normally hidden as a visible and intended part of a design. A pipe or tube has aesthetic values that can be used when not covered. The students where given an existing material with the assignment to give it a new purpose than what it was made for as a way to exercise a sustainable design thinking.
 
 SPONSORS
 {{< sponsors >}}
-![Kjellgren Kaminsky](/uploads/sponsorer/sponsor.png)
-![Propeer](/uploads/sponsorer/sponsor.png)
-![da Matteo](/uploads/sponsorer/sponsor.png)
+![Hydroscand](/uploads/sponsorer/hydroscand.png)
+![Scandicore](/uploads/sponsorer/scandicore.jpg)
+![Pipe Life](/uploads/sponsorer/pipe-life.jpg)
 {{</ sponsors >}}
