@@ -1,3 +1,5 @@
+/* eslint-disable no-param-reassign */
+
 const outerHeight = el => {
   const height = el.offsetHeight;
   const style = getComputedStyle(el);
