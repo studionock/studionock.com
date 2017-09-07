@@ -1,3 +1,4 @@
+/* eslint-disable import/no-extraneous-dependencies */
 const cp = require('child_process');
 const path = require('path');
 const gutil = require('gulp-util');
@@ -64,15 +65,13 @@ module.exports = (opts = {}) => {
         if (opts.warningsOnly)
           gutil.log(PLUGIN_NAME, '\n  ', formatOutput(warnings));
         return resolve();
-      } else {
-        const err = formatOutput(errors);
-
-        if (!opts.noThrow)
-          return reject(new gutil.PluginError(PLUGIN_NAME, err));
-
-        gutil.log(PLUGIN_NAME, '\n  ', err);
-        return resolve();
       }
+      const err = formatOutput(errors);
+
+      if (!opts.noThrow) return reject(new gutil.PluginError(PLUGIN_NAME, err));
+
+      gutil.log(PLUGIN_NAME, '\n  ', err);
+      return resolve();
     });
   });
 };
