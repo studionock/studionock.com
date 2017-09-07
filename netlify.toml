@@ -1,0 +1,12 @@
+[build]
+  command = "gulp build"
+  publish = "dist"
+
+[context.production]
+  [context.production.environment]
+    HUGO_VERSION = "0.26"
+
+[context.branch-deploy]
+  command = "make staging"
+  [context.branch-deploy.environment]
+    HUGO_VERSION = "0.26"
