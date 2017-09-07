@@ -10,8 +10,7 @@
   "scripts": {
     "start": "serve --cache 31536000000 ./dist",
     "dev": "gulp dev",
-    "build": "NODE_ENV=production gulp build",
-    "deploy": "gh-pages -d dist",
+    "build": "gulp build",
     "lint:js": "eslint 'src/**/*.js'",
     "lint:css": "stylelint 'src/**/*.css'",
     "lint": "eslint 'src/**/*.js' && stylelint 'src/**/*.css'"
