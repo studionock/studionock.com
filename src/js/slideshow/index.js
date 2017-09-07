@@ -24,16 +24,18 @@ const getImages = imgs => {
   };
 };
 
-const handleBtnRight = imgs => () => {
+const handleBtnRight = (imgs, container) => () => {
   const { current, next } = getImages(imgs);
   deacticateImg(current);
   activateImg(next);
+  container.style.height = `${outerHeight(next)}px`;
 };
 
-const handleBtnLeft = imgs => () => {
+const handleBtnLeft = (imgs, container) => () => {
   const { current, prev } = getImages(imgs);
   deacticateImg(current);
   activateImg(prev);
+  container.style.height = `${outerHeight(prev)}px`;
 };
 
 const initializeSlide = container => {
@@ -46,8 +48,8 @@ const initializeSlide = container => {
 
   activateImg(imgs[0]);
 
-  buttonRight.addEventListener('click', handleBtnRight(imgs));
-  buttonLeft.addEventListener('click', handleBtnLeft(imgs));
+  buttonRight.addEventListener('click', handleBtnRight(imgs, container));
+  buttonLeft.addEventListener('click', handleBtnLeft(imgs, container));
 };
 
 export default function slideshow() {

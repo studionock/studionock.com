@@ -1,0 +1,10 @@
+{{ define "main" }}
+    {{ range .Data.Pages }}
+      <article class="article exhibition__list">
+        <p>{{ .Params.startdate }}-{{ .Params.enddate }}</p>
+        <h2 class="article__title exhibition__list-title">
+          <a class="article__link exhibition__list-link" href="{{ .RelPermalink }}">{{ .Title }}</a>
+        </h2>
+      </article>
+    {{ end }}
+{{ end }}
