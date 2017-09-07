@@ -1,3 +1,9 @@
+@import "./_variables.css";
+
+.exhibition__list-link {
+  color: var(--colorBlack);
+}
+
 .exhibition__content {
   text-align: left;
 }

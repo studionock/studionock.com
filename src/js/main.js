@@ -1,7 +1,5 @@
 import balanceText from 'balance-text';
+import slideshow from './slideshow';
 
 balanceText();
-
-export default function app(who = 'world') {
-  return `Hello ${who}!`;
-}
+slideshow();
