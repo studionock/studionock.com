@@ -1,5 +1,5 @@
 [build]
-  command = "./node_modules/.bin/gulp build"
+  command = "gulp build"
   publish = "dist"
 
 [context.production]
