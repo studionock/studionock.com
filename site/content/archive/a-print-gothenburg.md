@@ -1,7 +1,7 @@
 ---
 date: "2017-04-06T22:46:58+02:00"
 draft: false
-type: "exhibitions"
+type: "projects"
 title: "A PRINT - GOTHENBURG"
 description: "An open archive of architecture publications"
 images:
@@ -19,9 +19,14 @@ params:
 A PRINT - GOTHENBURG  
 An open archive of architecture publications
 
-A PRINT is a collection, an open archive and an exhibition of independent architecture publications and zines. The ambition is to promote and showcase alternative publications for innovative commentary and criticism on architecture. These publications are an important contribution to the architectural discourse, allowing for independent, mainly non-pro t, editors to cover a broader range of topics than what is custom in conventional architectural magazines.
+A PRINT is a collection, an open archive and an exhibition of independent architecture publications and zines. The ambition is to promote and showcase alternative publications for innovative commentary and criticism on architecture. These publications are an important contribution to the architectural discourse, allowing for independent, mainly non-profit, editors to cover a broader range of topics than what is custom in conventional architectural magazines.
 
 <!--more-->
+The titles showcased in A PRINT represent more than ten different countries. Some focuses on one single phenomena or person, others are a collection of thoughts on a larger theme. No matter what the subject of the print is they all have something in common, that being that they are striving to bring something new to the discipline.
+
+The first edition of A PRINT took place in Gothenburg at Södra Larmgatan 7 in May 2017. The exhibition included 50 different magazines and showcased 110 unique issues. During the exhibition period NOCK held a vernissage, a finissage bar and a talk and discussion with migrant journal and paper magazine.
+A PRINT - GOTHENBURG was open 10.05.17 - 28.05.17
+
 {{< slideshow >}}
 ![A PRINT](/uploads/a-print-photos-01.jpg)
 ![A PRINT](/uploads/a-print-photos-02.jpg)
@@ -40,11 +45,6 @@ A PRINT is a collection, an open archive and an exhibition of independent archit
 {{</ slideshow >}}
 
 Photos by Samuel Petersson
-
-The titles showcased in A PRINT represent more than ten different countries. Some focuses on one single phenomena or person, others are a collection of thoughts on a larger theme. No matter what the subject of the print is they all have something in common, that being that they are striving to bring something new to the discipline.
-
-The first edition of A PRINT took place in Gothenburg at Södra Larmgatan 7 in May 2017. The exhibition included 50 different magazines and showcased 110 unique issues. During the exhibition period NOCK held a vernissage, a  nissage bar and a talk and discussion with migrant journal and paper magazine.
-A PRINT - GOTHENBURG was open 10.05.17 - 28.05.17
 
 2ha • Accattone • Architektur in Gebrauch • Bricks from the Kiln • Camenzind • CARTHA • civic city • CLOG • Club Donny • Colon • Ein Magazin Über Orte • engawa • Evil People in Modernist Homes in Popular Films • EYESORE • Flaneur • Fresh Meat • Friendly Fire • Horizonte • KOTE • KRITIK • LOBBY • Log • MacGuffin Magazine • MAP • Mas Context • Megawords • MIGRANT JOURNAL • mono.kultur • MONU • New Geographies • PAPER • PIN-UP • Pisegrama • PLAT • Pli • Polemik • Real Review • San Rocco • Scapegoat • SITE • SOILED • STAND BY ME • STUDIO • terra firma • The Modernist • The Plantation Journal • Thresholds • trans magazin • YUCA
 
