@@ -1,5 +1,5 @@
 [build]
-  command = "yarn run build"
+  command = "./node_modules/.bin/gulp"
   publish = "dist"
 
 [context.production]
