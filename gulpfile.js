@@ -14,7 +14,6 @@ const cssnano = require('cssnano');
 const webpack = require('webpack');
 const webpackStream = require('webpack-stream');
 const named = require('vinyl-named');
-const imagemin = require('gulp-imagemin');
 const favicons = require('gulp-favicons');
 
 const server = require('./gulp/server');
@@ -152,19 +151,15 @@ const jsProd = () => gulp.src(PATHS.js.src)
  * IMAGES
  */
 const imagesDev = () => gulp.src(PATHS.img.src, { since: gulp.lastRun(imagesDev) })
-  .pipe(imagemin())
   .pipe(gulp.dest(PATHS.img.dest.DEV));
 
 const imagesProd = () => gulp.src(PATHS.img.src)
-  .pipe(imagemin())
   .pipe(gulp.dest(PATHS.img.dest.PROD));
 
 const uploadsDev = () => gulp.src(PATHS.uploads.src, { since: gulp.lastRun(imagesDev) })
-  .pipe(imagemin())
   .pipe(gulp.dest(PATHS.uploads.dest.DEV));
 
 const uploadsProd = () => gulp.src(PATHS.uploads.src)
-  .pipe(imagemin())
   .pipe(gulp.dest(PATHS.uploads.dest.PROD));
 
 /**
