@@ -22,18 +22,6 @@ before_script:
   - npm install -g now
 script: npm test && npm run build
 
-deploy:
-  - provider: script
-    script: scripts/deploy.sh production
-    skip_cleanup: true
-    on:
-      branch: master
-  - provider: script
-    script: scripts/deploy.sh staging
-    skip_cleanup: true
-    on:
-      branch: develop
-
 notifications:
   email: false
   slack:
