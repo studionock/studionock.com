@@ -1,21 +1,17 @@
 /* eslint-disable no-param-reassign */
+import {
+  addClass,
+  removeClass,
+  hasClass,
+  getOuterHeight,
+  onDocumentReady,
+} from '../utils';
 
-const outerHeight = el => {
-  const height = el.offsetHeight;
-  const style = getComputedStyle(el);
-
-  return (
-    parseInt(style.marginTop, 10) + parseInt(style.marginBottom, 10) + height
-  );
-};
-
-const activateImg = img => img.classList.add('active');
-const deacticateImg = img => img.classList.remove('active');
+const activateImg = img => addClass(img, 'active');
+const deacticateImg = img => removeClass(img, 'active');
 
 const getImages = imgs => {
-  const current = Array.prototype.find.call(imgs, i =>
-    i.classList.contains('active'),
-  );
+  const current = Array.prototype.find.call(imgs, i => hasClass(i, 'active'));
   const next = current.nextElementSibling;
   const prev = current.previousElementSibling;
 
@@ -26,18 +22,14 @@ const getImages = imgs => {
   };
 };
 
-const handleBtnRight = (imgs, container) => () => {
-  const { current, next } = getImages(imgs);
-  deacticateImg(current);
-  activateImg(next);
-  container.style.height = `${outerHeight(next)}px`;
-};
+const handleClick = (imgs, container, back) => () => {
+  const { current, prev, next } = getImages(imgs);
+  const el = back ? prev : next;
 
-const handleBtnLeft = (imgs, container) => () => {
-  const { current, prev } = getImages(imgs);
   deacticateImg(current);
-  activateImg(prev);
-  container.style.height = `${outerHeight(prev)}px`;
+  activateImg(el);
+
+  container.style.height = `${getOuterHeight(el)}px`;
 };
 
 const initializeSlide = container => {
@@ -45,18 +37,18 @@ const initializeSlide = container => {
   const buttonLeft = container.querySelector('.slideshowbtn-left');
   const buttonRight = container.querySelector('.slideshowbtn-right');
 
-  const initialHeight = outerHeight(imgs[0]);
+  const initialHeight = getOuterHeight(imgs[0]);
   container.style.height = `${initialHeight}px`;
 
   activateImg(imgs[0]);
 
-  buttonRight.addEventListener('click', handleBtnRight(imgs, container));
-  buttonLeft.addEventListener('click', handleBtnLeft(imgs, container));
+  buttonRight.addEventListener('click', handleClick(imgs, container, false));
+  buttonLeft.addEventListener('click', handleClick(imgs, container, true));
 };
 
 export default function slideshow() {
-  window.onload = () => {
+  onDocumentReady(() => {
     const slideshows = document.querySelectorAll('.slideshow');
-    slideshows.forEach(initializeSlide);
-  };
+    Array.prototype.forEach.call(slideshows, initializeSlide);
+  });
 }
