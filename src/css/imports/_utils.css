@@ -23,3 +23,8 @@
 .balance-text {
   text-wrap: balanced;
 }
+
+.content-long-break {
+  height: 3em;
+  margin-bottom: 0 !important;
+}

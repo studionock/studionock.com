@@ -12,6 +12,7 @@ Studio NOCK is an independent platform for architecture; a space for exhibition 
 
 Studio NOCK is a non-profit association run by Agnes Gidenstam and Naima Callenberg.
 
+{{< long-break >}}
 Studio NOCK is run with support from [Västra Götalandsregionen](http://www.vgregion.se/).
 
 ![Västra Götalandsregionen](/uploads/VG.jpg)
