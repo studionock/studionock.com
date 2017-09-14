@@ -27,22 +27,7 @@ The titles showcased in A PRINT represent more than ten different countries. Som
 The first edition of A PRINT took place in Gothenburg at Södra Larmgatan 7 in May 2017. The exhibition included 50 different magazines and showcased 110 unique issues. During the exhibition period NOCK held a vernissage, a finissage bar and a talk and discussion with migrant journal and paper magazine.
 A PRINT - GOTHENBURG was open 10.05.17 - 28.05.17
 
-{{< slideshow >}}
-![A PRINT](/uploads/a-print-photos-01.jpg)
-![A PRINT](/uploads/a-print-photos-02.jpg)
-![A PRINT](/uploads/a-print-photos-03.jpg)
-![A PRINT](/uploads/a-print-photos-04.jpg)
-![A PRINT](/uploads/a-print-photos-05.jpg)
-![A PRINT](/uploads/a-print-photos-06.jpg)
-![A PRINT](/uploads/a-print-photos-07.jpg)
-![A PRINT](/uploads/a-print-photos-08.jpg)
-![A PRINT](/uploads/a-print-photos-09.jpg)
-![A PRINT](/uploads/a-print-photos-10.jpg)
-![A PRINT](/uploads/a-print-photos-11.jpg)
-![A PRINT](/uploads/a-print-photos-12.jpg)
-![A PRINT](/uploads/a-print-photos-13.jpg)
-![A PRINT](/uploads/a-print-photos-14.jpg)
-{{</ slideshow >}}
+{{< slideshow "/uploads/a-print-photos-01.jpg" "/uploads/a-print-photos-02.jpg" "/uploads/a-print-photos-03.jpg" "/uploads/a-print-photos-04.jpg" "/uploads/a-print-photos-05.jpg" "/uploads/a-print-photos-06.jpg" "/uploads/a-print-photos-07.jpg" "/uploads/a-print-photos-08.jpg" "/uploads/a-print-photos-09.jpg" "/uploads/a-print-photos-10.jpg" "/uploads/a-print-photos-11.jpg" "/uploads/a-print-photos-12.jpg" "/uploads/a-print-photos-13.jpg" "/uploads/a-print-photos-14.jpg" >}}
 
 Photos by Samuel Petersson
 

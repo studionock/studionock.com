@@ -20,11 +20,7 @@ A PRINT GUESTS #1 took place 13.05.17
 Catarina de Almeida Brito and Isavbel Seiffert gave a talk about the process behind and reason for MIGRANT JOURNAL. And then Hugo Losman Nädele and Samuel Michaëlsson joined for a discussion about architecture, zines and independent initiatives.
 
 <!--more-->
-{{< slideshow >}}
-![A PRINT GUESTS #1](/uploads/a-print-guests-1-01.jpg)
-![A PRINT GUESTS #1](/uploads/a-print-guests-1-02.jpg)
-![A PRINT GUESTS #1](/uploads/a-print-guests-1-03.jpg)
-{{</ slideshow >}}
+{{< slideshow "/uploads/a-print-guests-1-01.jpg" "/uploads/a-print-guests-1-02.jpg" "/uploads/a-print-guests-1-03.jpg" >}}
 
 Based in Zürich, Isabel Seiffert is a graphic designer mainly focused on editorial design and typography. Next to commissions and collaborations, she engages in research, design education and investigates critical issues within the fields of design. Her book *Not the End of Print* was published in 2014 and won the TDC 61 award in New York. Isabel joined forces with Christoph Miler in 2016 to form the design practice Offshore Studio.
 
