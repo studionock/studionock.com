@@ -3,6 +3,7 @@
 .slideshow {
   position: relative;
   margin: 1rem 0;
+  color: var(--colorBlack);
 }
 
 .slideshowbtn {
@@ -42,12 +43,77 @@
 .slideshow-container {
   position: relative;
   width: 100%;
+  height: 5rem;
   overflow: hidden;
   transition: height 0.3s ease-in-out;
 }
 
+.nock-inner-container {
+  z-index: 1;
+}
+
 .nock-img {
   position: absolute;
-  top: 0;
+  top: 50%;
   left: 0;
+  width: 100%;
+  transform: translate(0, -50%);
+}
+
+.nock-img-enter {
+  animation-name: fade-in;
+  animation-duration: 0.5s;
+}
+
+.nock-img-leave {
+  animation-name: fade-out;
+  animation-duration: 0.5s;
+}
+
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 2em;
+  height: 2em;
+  opacity: 0;
+  z-index: 2;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.3s;
+}
+
+.loader-spinner {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 3px dashed var(--colorBlack);
+  border-radius: 100%;
+  animation-name: spin;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.nock-loading .loader {
+  opacity: 0.8;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translate(100%, -50%);
+  }
+}
+
+@keyframes fade-out {
+  100% {
+    opacity: 0;
+    transform: translate(-100%, -50%);
+  }
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
 }

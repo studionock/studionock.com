@@ -737,12 +737,6 @@ babel-plugin-transform-regenerator@^6.22.0:
   dependencies:
     regenerator-transform "^0.10.0"
 
-babel-plugin-transform-runtime@^6.23.0:
-  version "6.23.0"
-  resolved "https://registry.yarnpkg.com/babel-plugin-transform-runtime/-/babel-plugin-transform-runtime-6.23.0.tgz#88490d446502ea9b8e7efb0fe09ec4d99479b1ee"
-  dependencies:
-    babel-runtime "^6.22.0"
-
 babel-plugin-transform-strict-mode@^6.24.1:
   version "6.24.1"
   resolved "https://registry.yarnpkg.com/babel-plugin-transform-strict-mode/-/babel-plugin-transform-strict-mode-6.24.1.tgz#d5faf7aa578a65bbe591cf5edae04a0c67020758"
@@ -4857,11 +4851,10 @@ next-tick@1:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/next-tick/-/next-tick-1.0.0.tgz#ca86d1fe8828169b0120208e3dc8424b9db8342c"
 
-nock-slider@^0.1.1:
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/nock-slider/-/nock-slider-0.1.1.tgz#8a8789cbe08fa72b59f5ea586d8470a17bd708da"
+nock-slider@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/nock-slider/-/nock-slider-0.2.0.tgz#d05170e7a76406c2d259f91087f34ffe80092f34"
   dependencies:
-    babel-runtime "^6.26.0"
     raf-schd "^2.0.1"
 
 node-libs-browser@^0.7.0:
