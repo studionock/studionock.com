@@ -1,7 +1,10 @@
 <div class="slideshow">
   <button type="button" class="slideshowbtn slideshowbtn-left">&lt;</button>
-  <div class="slideshow-innercontainer">
-    {{ markdownify .Inner }}
-  </div>
   <button type="button" class="slideshowbtn slideshowbtn-right">&gt;</button>
+  <div class="slideshow-container nock-loading">
+    <div class="loader"><span class="loader-spinner"></span></div>
+  </div>
 </div>
+<script type="text/javascript">
+  window.images = {{ apply .Params "urlize" "." | jsonify }};
+</script>

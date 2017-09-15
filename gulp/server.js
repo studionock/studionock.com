@@ -1,4 +1,6 @@
+/* eslint-disable import/no-extraneous-dependencies */
 const browserSync = require('browser-sync');
+
 const server = browserSync.create();
 
 const reload = done => {
